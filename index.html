@@ -1,31 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Java Programming Repository</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Java Repository</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="light">
 
 <nav>
     <h2>Java Programming SEM II</h2>
+    <button id="themeToggle">🌙</button>
 </nav>
 
-<main>
-    <h1 class="project-title">Java Journal Code Repository</h1>
+<main class="centered">
+    <h1>Java Journal Code Repository</h1>
 
-    <div class="folder-list">
-        <button onclick="loadFolder('assign1')">Assign 1</button>
-        <button onclick="loadFolder('assign2')">Assign 2</button>
+    <div class="nav-cards">
+        <a href="viewer.html?folder=assign1" class="nav-card">
+            Assign 1
+        </a>
+        <a href="viewer.html?folder=assign2" class="nav-card">
+            Assign 2
+        </a>
     </div>
-
-    <div id="cards-container" class="cards-container"></div>
 </main>
 
 <footer>
-    <p>© 2026 Ritesh Dhekane | MCA SEM II</p>
+    © 2026 Ritesh Dhekane | MCA SEM II
 </footer>
 
-<script src="script.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

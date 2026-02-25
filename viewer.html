@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Code Viewer</title>
+
+    <!-- GitHub Theme -->
+    <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-github.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="light">
+
+<nav>
+    <a href="index.html" class="back-btn">⬅ Back</a>
+    <h2 id="folderTitle"></h2>
+    <button id="themeToggle">🌙</button>
+</nav>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <h3>Files</h3>
+        <ul id="fileList"></ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+        <div id="cards-container" class="cards-container"></div>
+    </main>
+
+</div>
+
+<footer>
+    © 2026 Ritesh Dhekane | Java Visualizer
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
