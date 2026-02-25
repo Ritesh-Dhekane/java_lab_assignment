@@ -1,0 +1,7 @@
+[
+  { "filename": "Student.java", "displayName": "This Keyword Example" },
+  { "filename": "Calculator.java", "displayName": "Method Overloading - Calculator" },
+  { "filename": "Manager.java", "displayName": "Inheritance Example - Manager" },
+  { "filename": "PowerDemo.java", "displayName": "Lambda Power Function" },
+  { "filename": "CIDemo.java", "displayName": "Lambda Compound Interest" }
+]
