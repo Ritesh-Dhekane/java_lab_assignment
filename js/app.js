@@ -1,15 +1,27 @@
-// Dark Mode
+// Dark Mode Toggle
 const toggle = document.getElementById("themeToggle");
 
 if (toggle) {
+
+    function updateIcon() {
+        toggle.textContent =
+            document.body.classList.contains("dark") ? "🌙" : "☀️";
+    }
+
     toggle.addEventListener("click", () => {
         document.body.classList.toggle("dark");
-        localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
+        localStorage.setItem(
+            "theme",
+            document.body.classList.contains("dark") ? "dark" : "light"
+        );
+        updateIcon();
     });
 
     if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark");
     }
+
+    updateIcon();
 }
 
 // Viewer Page Logic

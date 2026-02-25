@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <title>Code Viewer</title>
 
-    <!-- GitHub Theme -->
     <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-github.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="light">
+<body>
 
 <nav>
-    <a href="index.html" class="back-btn">⬅ Back</a>
-    <h2 id="folderTitle"></h2>
-    <button id="themeToggle">🌙</button>
+    <div class="nav-left">
+        <a href="index.html" class="back-btn">← Back</a>
+        <h2 id="folderTitle"></h2>
+    </div>
+
+    <button id="themeToggle" class="theme-btn">
+        ☀️
+    </button>
 </nav>
 
 <div class="layout">
 
-    <!-- Sidebar -->
     <aside id="sidebar">
         <h3>Files</h3>
         <ul id="fileList"></ul>
     </aside>
 
-    <!-- Main Content -->
     <main>
         <div id="cards-container" class="cards-container"></div>
     </main>
