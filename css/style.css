@@ -84,18 +84,26 @@ nav {
 
 .nav-card {
     padding: 25px 40px;
-    background: white;
+    background: #000000;          /* Always black background */
     border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
-    color: #24292f;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    color: #ffffff;               /* Always white text */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     transition: 0.3s;
 }
 
 .nav-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    background: #111111;          /* Slight hover change */
+    color: #ffffff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
+/* Force same style even in dark mode */
+body.dark .nav-card {
+    background: #000000;
+    color: #ffffff;
 }
 
 /* ================= LAYOUT ================= */
