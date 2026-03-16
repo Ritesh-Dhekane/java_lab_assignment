@@ -6,7 +6,7 @@ public class ExceptionDifferenceDemo {
 
     public static void main(String args[]) {
 
-        System.out.println("devName: Ritesh Dhekane");
+        System.out.println("devName: Aakanksha Mane");
         System.out.println("Q20: Checked vs Unchecked Exception");
 
         try {
