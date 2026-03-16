@@ -104,10 +104,25 @@ aside li:hover {
     margin-top: 0;
 }
 
+aside {
+    width: 240px;
+    background: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #e1e4e8;
+
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+aside li {
+    padding: 12px 10px;
+}
+
 /* code blocks */
 .card pre {
     overflow-x: auto;
-    white-space: pre;
+    white-space: pre-wrap;
+    word-break: break-word;
 }
 
 /* FOOTER */
@@ -154,6 +169,10 @@ body.dark aside {
         grid-template-columns: 1fr;   /* ONE CARD PER ROW */
         padding: 15px;
         gap: 18px;
+    }
+
+     .card {
+        padding: 16px;
     }
 
 }
