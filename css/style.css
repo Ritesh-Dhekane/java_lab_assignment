@@ -22,17 +22,35 @@ main {
 nav {
     background: #24292f;
     color: white;
-    padding: 14px 25px;
+    padding: 14px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
+
+/* left side of navbar */
 
 .nav-left {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 14px;
+    min-width: 0;
 }
+
+/* folder title */
+
+.folder-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+}
+
+/* back button */
 
 .back-btn {
     background: #2f363d;
@@ -41,7 +59,14 @@ nav {
     text-decoration: none;
     color: white;
     font-size: 14px;
+    transition: background 0.2s;
 }
+
+.back-btn:hover {
+    background: #444c56;
+}
+
+/* theme button */
 
 .theme-btn {
     background: #2f363d;
@@ -50,6 +75,12 @@ nav {
     padding: 6px 12px;
     border-radius: 6px;
     cursor: pointer;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+
+.theme-btn:hover {
+    background: #444c56;
 }
 
 /* LAYOUT */
@@ -173,6 +204,30 @@ body.dark aside {
 
      .card {
         padding: 16px;
+    }
+
+}
+/* MOBILE NAVBAR */
+
+@media (max-width: 600px) {
+
+    nav {
+        padding: 12px 16px;
+    }
+
+    .folder-title {
+        font-size: 16px;
+        max-width: 150px;
+    }
+
+    .back-btn {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+
+    .theme-btn {
+        font-size: 14px;
+        padding: 5px 10px;
     }
 
 }
