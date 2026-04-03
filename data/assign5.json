@@ -1,0 +1,7 @@
+[
+  { "filename": "PrimeThreadDemo.java", "displayName": "Q21: Prime Numbers using Thread (1–500 with delay)" },
+  { "filename": "ThreadLifeCycle.txt", "displayName": "Q22: Thread Life Cycle Explanation and Diagram" },
+  { "filename": "SynchronizedDemo.java", "displayName": "Q23: Demonstration of synchronized keyword" },
+  { "filename": "PerfectNumberThreadDemo.java", "displayName": "Q24: Perfect Numbers using Thread (1–1000 with delay)" },
+  { "filename": "SequenceThreadDemo.java", "displayName": "Q25: Thread Execution Control using synchronized and join()" }
+]
