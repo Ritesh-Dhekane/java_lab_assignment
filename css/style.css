@@ -1,4 +1,5 @@
-/* Reset */
+/* ================= RESET ================= */
+
 * {
     box-sizing: border-box;
 }
@@ -9,7 +10,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: #f6f8fa;
+    background: linear-gradient(to right, #f8fafc, #eef2f7);
     color: #24292f;
 }
 
@@ -17,7 +18,7 @@ main {
     flex: 1;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 
 nav {
     background: #24292f;
@@ -29,28 +30,19 @@ nav {
     flex-wrap: wrap;
 }
 
-/* left side of navbar */
-
 .nav-left {
     display: flex;
     align-items: center;
     gap: 14px;
-    min-width: 0;
 }
 
-/* folder title */
-
-.folder-title {
+.site-title {
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 300px;
 }
 
-/* back button */
+/* Back button */
 
 .back-btn {
     background: #2f363d;
@@ -59,14 +51,14 @@ nav {
     text-decoration: none;
     color: white;
     font-size: 14px;
-    transition: background 0.2s;
+    transition: 0.2s;
 }
 
 .back-btn:hover {
     background: #444c56;
 }
 
-/* theme button */
+/* Theme button */
 
 .theme-btn {
     background: #2f363d;
@@ -76,27 +68,76 @@ nav {
     border-radius: 6px;
     cursor: pointer;
     font-size: 15px;
-    transition: background 0.2s;
+    transition: 0.2s;
 }
 
 .theme-btn:hover {
     background: #444c56;
 }
 
-/* LAYOUT */
+/* ================= INDEX PAGE ================= */
+
+.centered {
+    text-align: center;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.project-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* Assignment cards */
+
+.nav-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.nav-card {
+    display: block;
+    text-decoration: none;
+    padding: 25px;
+    background: #2b2b2b;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    transition: all 0.25s ease;
+}
+
+.nav-card:hover {
+    transform: translateY(-6px);
+    background: #111;
+}
+
+/* ================= LAYOUT ================= */
 
 .layout {
     display: flex;
     flex: 1;
 }
 
-/* SIDEBAR */
+/* ================= SIDEBAR ================= */
 
 aside {
     width: 240px;
     background: #ffffff;
     padding: 20px;
     border-right: 1px solid #e1e4e8;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+aside h3 {
+    margin-top: 0;
 }
 
 aside ul {
@@ -105,16 +146,17 @@ aside ul {
 }
 
 aside li {
-    padding: 8px 10px;
+    padding: 12px 10px;
     border-radius: 6px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 aside li:hover {
     background: #f0f3f6;
 }
 
-/* CARDS */
+/* ================= CARDS ================= */
 
 .cards-container {
     padding: 25px;
@@ -135,37 +177,25 @@ aside li:hover {
     margin-top: 0;
 }
 
-aside {
-    width: 240px;
-    background: #ffffff;
-    padding: 20px;
-    border-right: 1px solid #e1e4e8;
+/* Code blocks */
 
-    max-height: 100vh;
-    overflow-y: auto;
-}
-
-aside li {
-    padding: 12px 10px;
-}
-
-/* code blocks */
 .card pre {
     overflow-x: auto;
     white-space: pre-wrap;
     word-break: break-word;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 
 footer {
     background: #24292f;
     color: white;
     text-align: center;
     padding: 12px;
+    margin-top: auto;
 }
 
-/* DARK MODE */
+/* ================= DARK MODE ================= */
 
 body.dark {
     background: #0d1117;
@@ -182,7 +212,12 @@ body.dark aside {
     background: #161b22;
 }
 
-/* MOBILE RESPONSIVE */
+body.dark .nav-card {
+    background: #000;
+    color: #fff;
+}
+
+/* ================= MOBILE ================= */
 
 @media (max-width: 900px) {
 
@@ -197,17 +232,17 @@ body.dark aside {
     }
 
     .cards-container {
-        grid-template-columns: 1fr;   /* ONE CARD PER ROW */
+        grid-template-columns: 1fr;
         padding: 15px;
         gap: 18px;
     }
 
-     .card {
+    .card {
         padding: 16px;
     }
-
 }
-/* MOBILE NAVBAR */
+
+/* NAVBAR MOBILE */
 
 @media (max-width: 600px) {
 
@@ -215,19 +250,17 @@ body.dark aside {
         padding: 12px 16px;
     }
 
-    .folder-title {
+    .project-title {
+        font-size: 24px;
+    }
+
+    .nav-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-card {
         font-size: 16px;
-        max-width: 150px;
-    }
-
-    .back-btn {
-        font-size: 13px;
-        padding: 5px 10px;
-    }
-
-    .theme-btn {
-        font-size: 14px;
-        padding: 5px 10px;
+        padding: 20px;
     }
 
 }
