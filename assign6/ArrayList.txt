@@ -1,0 +1,22 @@
+Q27: Define ArrayList and its features
+
+Definition:
+ArrayList is a resizable array implementation of the List interface in Java.
+It allows dynamic storage of elements.
+
+Features:
+
+1. Dynamic Size:
+   ArrayList can grow and shrink automatically as elements are added or removed.
+
+2. Ordered Collection:
+   Elements are stored in insertion order.
+
+3. Allows Duplicates:
+   Same element can be stored multiple times.
+
+4. Fast Random Access:
+   Elements can be accessed using index quickly.
+
+5. Not Synchronized:
+   It is not thread-safe by default, making it faster than Vector.

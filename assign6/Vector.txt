@@ -1,0 +1,22 @@
+Q28: Vector and difference from ArrayList
+
+Definition:
+Vector is a dynamic array class that is synchronized.
+
+Differences:
+
+1. Synchronization:
+   Vector is synchronized (thread-safe)
+   ArrayList is not synchronized
+
+2. Performance:
+   Vector is slower due to synchronization
+   ArrayList is faster
+
+3. Legacy:
+   Vector is a legacy class
+   ArrayList is part of modern collection framework
+
+4. Thread Safety:
+   Vector can be used in multi-threading
+   ArrayList requires manual synchronization

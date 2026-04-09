@@ -1,0 +1,19 @@
+Q29: Set Interface and its implementations
+
+Definition:
+Set is a collection that does not allow duplicate elements.
+
+Classes implementing Set:
+
+1. HashSet:
+   Stores elements using hashing
+   Does not maintain order
+
+2. LinkedHashSet:
+   Maintains insertion order
+
+3. TreeSet:
+   Stores elements in sorted order
+
+Feature of Set:
+- No duplicate elements allowed
