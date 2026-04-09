@@ -1,0 +1,7 @@
+[
+  { "filename": "ArrayListDemo.java", "displayName": "Q26: ArrayList Operations (Add, Remove, Sort)" },
+  { "filename": "ArrayList.txt", "displayName": "Q27: Definition and Features of ArrayList" },
+  { "filename": "Vector.txt", "displayName": "Q28: Vector and Differences from ArrayList" },
+  { "filename": "Set.txt", "displayName": "Q29: Set Interface and its Implementations" },
+  { "filename": "HashMapDemo.java", "displayName": "Q30: HashMap Operations (Insertion, Search, Iteration)" }
+]
