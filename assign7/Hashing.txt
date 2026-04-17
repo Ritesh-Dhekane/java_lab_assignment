@@ -1,0 +1,29 @@
+Q32: Hashing and Map Methods
+
+Hashing:
+Hashing is a technique used to convert an object into a unique integer value (hash code).
+
+How it ensures uniqueness:
+- Each object generates a hash code
+- HashMap/HashSet use this hash code to store data
+- Duplicate objects (same hash + equals) are not stored again
+
+Map Interface Methods (any four):
+
+1. put(key, value)
+   Inserts a key-value pair
+
+2. get(key)
+   Returns value associated with key
+
+3. remove(key)
+   Removes mapping of given key
+
+4. containsKey(key)
+   Checks if key exists
+
+5. keySet()
+   Returns all keys
+
+6. entrySet()
+   Returns all key-value pairs

@@ -1,0 +1,16 @@
+Q34: Hashing and Methods
+
+Hashing:
+Hashing converts objects into integer values (hash codes) for faster access.
+
+Purpose of hashCode():
+- Returns integer representation of object
+- Used to locate bucket in HashMap/HashSet
+
+Purpose of equals():
+- Compares two objects
+- Returns true if objects are logically equal
+
+Important:
+- If equals() is true → hashCode() must be same
+- Used together to prevent duplicates in collections

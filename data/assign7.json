@@ -1,0 +1,7 @@
+[
+  { "filename": "HashSetDemo.java", "displayName": "Q31: HashSet - Unique Student Roll Numbers (No Duplicates)" },
+  { "filename": "Hashing.txt", "displayName": "Q32: Hashing Concept and Map Interface Methods" },
+  { "filename": "VectorOperations.txt", "displayName": "Q33: Insert and Delete Operations in Vector" },
+  { "filename": "HashingMethods.txt", "displayName": "Q34: Hashing, hashCode() and equals() Methods" },
+  { "filename": "StudentHashMapDemo.java", "displayName": "Q35: HashMap - Store and Display Student Data" }
+]

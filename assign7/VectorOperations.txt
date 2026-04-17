@@ -1,0 +1,23 @@
+Q33: Insert and Delete operations in Vector
+
+Insert Operation:
+- Elements can be added using add() method
+- Example:
+  vector.add(10);
+
+- Insert at specific position:
+  vector.add(1, 20);
+
+Delete Operation:
+- Elements can be removed using remove() method
+
+- Remove by value:
+  vector.remove(10);
+
+- Remove by index:
+  vector.remove(0);
+
+- Clear all elements:
+  vector.clear();
+
+Vector is synchronized, so operations are thread-safe.
