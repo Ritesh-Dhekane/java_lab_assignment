@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q41 Registration Form</title>
+</head>
+<body>
+    <h2>Q41 - Student Registration Form</h2>
+    <p>devName: Ritesh Dhekane</p>
+    <form action="register" method="post">
+        <table>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username" required></td>
+            </tr>
+            <tr>
+                <td>College:</td>
+                <td><input type="text" name="college" required></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td><input type="text" name="city" required></td>
+            </tr>
+            <tr>
+                <td>Title:</td>
+                <td>
+                    <select name="title" required>
+                        <option value="">Select</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Mrs.">Mrs.</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="Male" required> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

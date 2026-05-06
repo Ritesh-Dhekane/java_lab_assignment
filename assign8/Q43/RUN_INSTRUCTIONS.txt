@@ -1,0 +1,36 @@
+Question 43
+devName: Ritesh Dhekane
+
+1. Place files in Tomcat webapps folder:
+   apache-tomcat/webapps/Q43/
+   - index.html
+   - insert.jsp
+
+2. MySQL setup:
+   create database testdb;
+   use testdb;
+
+   create table Student (
+       rno int primary key,
+       sname varchar(50),
+       percentage double
+   );
+
+3. JDBC driver setup:
+   Copy mysql-connector-j.jar into:
+   apache-tomcat/lib/
+   or
+   apache-tomcat/webapps/Q43/WEB-INF/lib/
+
+4. Database connection used in JSP:
+   jdbc:mysql://localhost:3306/testdb
+   username: root
+   password: root
+
+   If your MySQL username/password is different, edit insert.jsp.
+
+5. Start Tomcat:
+   - Windows: apache-tomcat\bin\startup.bat
+
+6. URL to run:
+   http://localhost:8080/Q43/index.html

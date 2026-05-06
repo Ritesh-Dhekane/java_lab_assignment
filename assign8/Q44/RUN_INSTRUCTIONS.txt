@@ -1,0 +1,43 @@
+Question 44
+devName: Ritesh Dhekane
+
+1. Place files in Tomcat webapps folder:
+   apache-tomcat/webapps/Q44/
+   - display.jsp
+
+2. MySQL setup:
+   create database testdb;
+   use testdb;
+
+   create table Student (
+       rno int primary key,
+       sname varchar(50),
+       percentage double
+   );
+
+   Insert sample data:
+   insert into Student values (1, 'Ravi', 82);
+   insert into Student values (2, 'Pooja', 68);
+   insert into Student values (3, 'Sneha', 77);
+
+3. Scholarship rule used:
+   percentage >= 75
+
+4. JDBC driver setup:
+   Copy mysql-connector-j.jar into:
+   apache-tomcat/lib/
+   or
+   apache-tomcat/webapps/Q44/WEB-INF/lib/
+
+5. Database connection used in JSP:
+   jdbc:mysql://localhost:3306/testdb
+   username: root
+   password: root
+
+   If your MySQL username/password is different, edit display.jsp.
+
+6. Start Tomcat:
+   - Windows: apache-tomcat\bin\startup.bat
+
+7. URL to run:
+   http://localhost:8080/Q44/display.jsp

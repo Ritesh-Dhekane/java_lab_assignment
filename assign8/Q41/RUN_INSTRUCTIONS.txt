@@ -1,0 +1,25 @@
+Question 41
+devName: Ritesh Dhekane
+
+1. Place files in Tomcat webapps folder:
+   apache-tomcat/webapps/Q41/
+   - index.html
+   - RegisterServlet.java
+   - WEB-INF/web.xml
+
+2. Create classes folder:
+   apache-tomcat/webapps/Q41/WEB-INF/classes
+
+3. Compile servlet:
+   Open Command Prompt in apache-tomcat/webapps/Q41/
+   javac -cp "C:\apache-tomcat\lib\servlet-api.jar" -d WEB-INF\classes RegisterServlet.java
+
+4. Start Tomcat:
+   - Windows: apache-tomcat\bin\startup.bat
+   - Or start Tomcat from Services/IDE if already configured
+
+5. URL to run:
+   http://localhost:8080/Q41/index.html
+
+6. Note:
+   This question uses HTML + Servlet only. No MySQL setup is required.
