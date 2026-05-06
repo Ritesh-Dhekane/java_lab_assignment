@@ -1,0 +1,50 @@
+{
+  "sections": [
+    {
+      "name": "Q41",
+      "path": "assign8/Q41",
+      "files": [
+        { "filename": "index.html", "displayName": "Q41 - Registration Form" },
+        { "filename": "RegisterServlet.java", "displayName": "Q41 - Register Servlet" },
+        { "filename": "RUN_INSTRUCTIONS.txt", "displayName": "Q41 - Run Instructions" },
+        { "filename": "WEB-INF/web.xml", "displayName": "Q41 - Deployment Descriptor", "path": "assign8/Q41/WEB-INF/web.xml" }
+      ]
+    },
+    {
+      "name": "Q42",
+      "path": "assign8/Q42",
+      "files": [
+        { "filename": "index.html", "displayName": "Q42 - Salary Update Form" },
+        { "filename": "update.jsp", "displayName": "Q42 - Update Employee JSP" },
+        { "filename": "RUN_INSTRUCTIONS.txt", "displayName": "Q42 - Run Instructions" }
+      ]
+    },
+    {
+      "name": "Q43",
+      "path": "assign8/Q43",
+      "files": [
+        { "filename": "index.html", "displayName": "Q43 - Student Insert Form" },
+        { "filename": "insert.jsp", "displayName": "Q43 - Insert Student JSP" },
+        { "filename": "RUN_INSTRUCTIONS.txt", "displayName": "Q43 - Run Instructions" }
+      ]
+    },
+    {
+      "name": "Q44",
+      "path": "assign8/Q44",
+      "files": [
+        { "filename": "display.jsp", "displayName": "Q44 - Scholarship Display JSP" },
+        { "filename": "RUN_INSTRUCTIONS.txt", "displayName": "Q44 - Run Instructions" }
+      ]
+    },
+    {
+      "name": "Q45",
+      "path": "assign8/Q45",
+      "files": [
+        { "filename": "index.html", "displayName": "Q45 - Teacher Form" },
+        { "filename": "insertTeacher.jsp", "displayName": "Q45 - Insert Teacher JSP" },
+        { "filename": "displayTeacher.jsp", "displayName": "Q45 - Display Teacher JSP" },
+        { "filename": "RUN_INSTRUCTIONS.txt", "displayName": "Q45 - Run Instructions" }
+      ]
+    }
+  ]
+}
